@@ -10,10 +10,10 @@ import genricLib.WebDriverUtilities;
 import pomPages.NopCommerce_HomePage;
 import pomPages.NopCommerce_Ragister;
 
-public class To_Varify_Ragister_User extends BaseClass
+public class To_Varify_that_User_Ragister_with_Valid_Data extends BaseClass
 {
 	@Test
-	public void tc1() throws FileNotFoundException, IOException
+	public void tc3() throws FileNotFoundException, IOException
 	{
 		NopCommerce_HomePage hp = new NopCommerce_HomePage(driver);
 		hp.goToRagisterPage();	
