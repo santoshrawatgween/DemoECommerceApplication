@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="scripts.To_Varify_that_User_Ragister_with_Valid_Data"/>
+      <class name="scripts.ToVerifyThatEuroIsSelectedInDropdown"/>
+      <class name="scripts.ToVerifyAlertPopUpDuringSearchOperation"/>
+      <class name="scripts.ToVerifyThatloginPageIsDisplayed"/>
+      <class name="scripts.ToVerifyThatRaisterPageIsDisplayed"/>
+      <class name="scripts.UserSearchaProductInWelcomePage"/>
+      <class name="scripts.ToVerifyThatUserAddProductToCart"/>
+      <class name="scripts.To_Verify_The_Customer_login_with_ValidData"/>
+      <class name="scripts.ToVerifyThatUserAddProductToWishlist"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

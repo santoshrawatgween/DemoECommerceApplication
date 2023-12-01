@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -29,9 +30,17 @@ public class BaseClass
 	}
 	
 	@AfterMethod
-	public void closeApp() throws InterruptedException
+	public void closeApp(ITestResult its) throws InterruptedException, IOException
 	{
-		Thread.sleep(10000);
+		Thread.sleep(3000);
+		
+		int status = its.getStatus();
+		String name = its.getName();
+		if(status==2)
+		{
+			Screenshot s = new Screenshot();
+			s.getPhoto(driver, name);
+		}
 		driver.quit();
 	}
 	

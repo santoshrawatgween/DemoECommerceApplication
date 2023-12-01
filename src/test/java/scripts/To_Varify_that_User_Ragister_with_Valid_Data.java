@@ -30,6 +30,7 @@ public class To_Varify_that_User_Ragister_with_Valid_Data extends BaseClass
 		r1.PasswordTextBox(pdata.getData("PasswordTextBox"));
 		r1.ConfirmPasswordTextBox(pdata.getData("ConfirmPasswordTextBox"));
 		r1.ragisterButton();
+		utilities.validation(hp.getRagistrationCompleteMessage().getText(), pdata.getData("ragistrationCompleteMessage"));
 	}
 
 }

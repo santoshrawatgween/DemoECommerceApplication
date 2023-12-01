@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="scripts.ToVerifyThatUserAddProductToWishlist">
+      <class name="scripts.To_Varify_that_User_Ragister_with_Valid_Data">
         <methods>
           <include name="openApp"/>
-          <include name="tc5"/>
           <include name="closeApp"/>
+          <include name="tc3"/>
         </methods>
-      </class> <!-- scripts.ToVerifyThatUserAddProductToWishlist -->
+      </class> <!-- scripts.To_Varify_that_User_Ragister_with_Valid_Data -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -10,10 +10,11 @@ import pomPages.CustomerWelcomePage;
 import pomPages.LoginPage;
 import pomPages.NopCommerce_HomePage;
 
-public class To_Verify_The_Customer_login_with_ValidData extends BaseClass
+public class ToVerifyThatEuroIsSelectedInDropdown extends BaseClass
 {
+
 	@Test
-	public void tc4() throws FileNotFoundException, IOException
+	public void tc() throws FileNotFoundException, IOException
 	{
 		NopCommerce_HomePage hp = new NopCommerce_HomePage(driver);
 		hp.goToLoginPage();
@@ -21,11 +22,8 @@ public class To_Verify_The_Customer_login_with_ValidData extends BaseClass
 		l1.userNameTextBox(pdata.getData("emailTextbox"));
 		l1.passwordTextBox(pdata.getData("PasswordTextBox"));
 		l1.loginButton();
-		CustomerWelcomePage wp= new CustomerWelcomePage(driver);
-		utilities.validation(wp.getLogoutButton().getText(), pdata.getData("logoutButtonText"));
-		
+		CustomerWelcomePage wc1 = new CustomerWelcomePage(driver);
+		utilities.SelectOption(wc1.getCustomerCurrency(), pdata.getData("CustomerCurrency"));
 		
 	}
-	
-
 }
